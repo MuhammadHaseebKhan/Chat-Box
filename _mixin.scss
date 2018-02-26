@@ -1,0 +1,26 @@
+
+@mixin nav-style($color){
+    background: $color;
+    height: 45px;
+    width: 100%;
+}
+
+@mixin border-style($size,$color){
+    border: $size solid $color;
+}
+
+@mixin height-width($height,$width){
+    height: $height;
+    width: $width;
+}
+@mixin border-radius-for-small-chat{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@mixin border-radius-for-big-chat{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px
+}

@@ -1,0 +1,193 @@
+@import "_variables.scss";
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    // background: gray;
+    animation: myanimation 10s infinite;
+    .chat-box{
+       @include height-width(350px,280px);
+       @include border-style(1px,black);
+       border-radius: 5px;
+       background: white;
+       position: fixed;
+       right: 0;
+       bottom: 0;
+       margin-right: 240px;
+       .header{
+            display: flex;
+            justify-content: space-between;
+            @include height-width(30px,278px);
+            @include border-style(1px,rgb(42, 116, 177));
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background: rgb(42, 116, 177);
+            .left-header{
+                @include height-width(100%,40%);
+                @include border-style($border-size,rgb(42, 116, 177)); 
+                display: flex;
+                justify-content: space-between;
+                .left-sub-header-1{
+                    @include height-width(100%,15%);
+                    @include border-style(0px,black); 
+                    padding: 3px;
+                    img{
+                        @include height-width(50%,100%);
+                        padding-bottom: 0px;
+                    }
+                }        
+                .left-sub-header-2{
+                    @include height-width(100%,81%);
+                    @include border-style(0px,black); 
+                    font-family: sans-serif;
+                    padding-top: 3px;
+                    // margin-top: 2px;
+                    font-size: 16px;
+                    color: white;
+                }                  
+            }
+            .right-header{
+                @include height-width(100%,50%);
+                @include border-style($border-size,rgb(42, 116, 177)); 
+                display: flex;
+                justify-content: space-between;
+                .right-sub-header{
+                    @include height-width(100%,18%);
+                    @include border-style($border-size,rgb(42, 116, 177));
+                    padding: 3px;
+                    img{
+                        @include height-width(70%,80%);
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+       }
+       .body{
+            @include height-width(248px,278px);
+            @include border-style(1px,red); 
+            display: flex;
+            .side-bar{
+                @include height-width(245px,50px);
+                @include border-style(1px,black); 
+            }
+            .chat{
+                @include height-width(245px,222px);
+                @include border-style(1px,black); 
+                padding: 5px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                .small-chat{
+                    @extend %chat-size-small;
+                }
+                .big-chat{
+                    @extend %chat-size-big;   
+                }
+                .small-chat-1{
+                    @extend %chat-size-small;
+                    background: red;
+                    margin-left: 120px;
+                    margin-top: 5px;
+                }
+                .big-chat-1{
+                    @extend %chat-size-big-1;
+                    background: yellow;
+                    margin-left: 42px;
+                }
+            }
+       }
+       .footer{
+            @include height-width(70px,278px);
+            @include border-style(1px,lightgray);
+            position: fixed;
+            bottom: 0;
+            .text-area{
+                @include height-width(28px,274px);
+                @include border-style(1px,white);
+                textarea{
+                    @include height-width(30px,266px);
+                    @include border-style(1px,black);
+                    overflow: hidden;
+                    margin-left: 3px;
+                }
+            }
+            .attachment{
+                @include height-width(30px,266px);
+                @include border-style(1px,white);
+                position: fixed;
+                justify-content: space-between;
+                bottom: 0;
+                display: flex;
+                margin-left: 5px;
+                // margin-right: 5px;
+               
+                .footer-image-1{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(85%,90%);
+                    }
+                }
+                .footer-image-2{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(80%,70%);
+                    }
+                }
+                .footer-image-3{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(80%,90%);
+                    }
+                }
+                .footer-image-4{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(80%,80%);
+                    }
+                }
+                .footer-image-5{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(80%,70%);
+                    }
+                }
+                .footer-image-6{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(100%,90%);
+                    }
+                }
+                .footer-image-7{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(90%,80%);
+                    }
+                }
+                .footer-image-8{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(85%,90%);
+                        padding-top: 2px;
+                    }
+                }
+                .footer-image-9{
+                    @extend %footer-image;
+                    img{
+                        @include height-width(90%,80%);
+                    }
+                }
+            }
+       }
+    }
+}
+
+@keyframes myanimation {
+    0% {background-color: red;}
+    25%{background-color:yellow;}
+    50%{background-color:green;}
+    75%{background-color:brown;}
+    100% {background-color: red;}
+  }
+

@@ -1,0 +1,207 @@
+body .chat-box .footer .attachment .footer-image-1, body .chat-box .footer .attachment .footer-image-2, body .chat-box .footer .attachment .footer-image-3, body .chat-box .footer .attachment .footer-image-4, body .chat-box .footer .attachment .footer-image-5, body .chat-box .footer .attachment .footer-image-6, body .chat-box .footer .attachment .footer-image-7, body .chat-box .footer .attachment .footer-image-8, body .chat-box .footer .attachment .footer-image-9 {
+  height: 25px;
+  width: 25px;
+  border: 1px solid white; }
+  body .chat-box .footer .attachment .footer-image-1 img:hover, body .chat-box .footer .attachment .footer-image-2 img:hover, body .chat-box .footer .attachment .footer-image-3 img:hover, body .chat-box .footer .attachment .footer-image-4 img:hover, body .chat-box .footer .attachment .footer-image-5 img:hover, body .chat-box .footer .attachment .footer-image-6 img:hover, body .chat-box .footer .attachment .footer-image-7 img:hover, body .chat-box .footer .attachment .footer-image-8 img:hover, body .chat-box .footer .attachment .footer-image-9 img:hover {
+    cursor: pointer; }
+
+body .chat-box .body .chat .small-chat, body .chat-box .body .chat .small-chat-1 {
+  height: 30px;
+  width: 75px;
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px;
+  background: #f1f0f0; }
+  body .chat-box .body .chat .small-chat p, body .chat-box .body .chat .small-chat-1 p {
+    display: inline;
+    font-family: sans-serif;
+    font-size: 12px; }
+
+body .chat-box .body .chat .big-chat {
+  height: 45px;
+  width: 190px;
+  border: 1px solid black;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 4px;
+  padding: 5px;
+  background: #f1f0f0; }
+  body .chat-box .body .chat .big-chat p {
+    display: inline;
+    font-family: sans-serif;
+    font-size: 12px; }
+
+body .chat-box .body .chat .big-chat-1 {
+  height: 45px;
+  width: 150px;
+  border: 1px solid black;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 4px;
+  padding: 5px;
+  background: #f1f0f0; }
+  body .chat-box .body .chat .big-chat-1 p {
+    display: inline;
+    font-family: sans-serif;
+    font-size: 12px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  animation: myanimation 10s infinite; }
+  body .chat-box {
+    height: 350px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 240px; }
+    body .chat-box .header {
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      width: 278px;
+      border: 1px solid #2a74b1;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background: #2a74b1; }
+      body .chat-box .header .left-header {
+        height: 100%;
+        width: 40%;
+        border: 1px solid #2a74b1;
+        display: flex;
+        justify-content: space-between; }
+        body .chat-box .header .left-header .left-sub-header-1 {
+          height: 100%;
+          width: 15%;
+          border: 0px solid black;
+          padding: 3px; }
+          body .chat-box .header .left-header .left-sub-header-1 img {
+            height: 50%;
+            width: 100%;
+            padding-bottom: 0px; }
+        body .chat-box .header .left-header .left-sub-header-2 {
+          height: 100%;
+          width: 81%;
+          border: 0px solid black;
+          font-family: sans-serif;
+          padding-top: 3px;
+          font-size: 16px;
+          color: white; }
+      body .chat-box .header .right-header {
+        height: 100%;
+        width: 50%;
+        border: 1px solid #2a74b1;
+        display: flex;
+        justify-content: space-between; }
+        body .chat-box .header .right-header .right-sub-header {
+          height: 100%;
+          width: 18%;
+          border: 1px solid #2a74b1;
+          padding: 3px; }
+          body .chat-box .header .right-header .right-sub-header img {
+            height: 70%;
+            width: 80%; }
+            body .chat-box .header .right-header .right-sub-header img:hover {
+              cursor: pointer; }
+    body .chat-box .body {
+      height: 248px;
+      width: 278px;
+      border: 1px solid red;
+      display: flex; }
+      body .chat-box .body .side-bar {
+        height: 245px;
+        width: 50px;
+        border: 1px solid black; }
+      body .chat-box .body .chat {
+        height: 245px;
+        width: 222px;
+        border: 1px solid black;
+        padding: 5px;
+        overflow-x: hidden;
+        overflow-y: scroll; }
+        body .chat-box .body .chat .small-chat-1 {
+          background: red;
+          margin-left: 120px;
+          margin-top: 5px; }
+        body .chat-box .body .chat .big-chat-1 {
+          background: yellow;
+          margin-left: 42px; }
+    body .chat-box .footer {
+      height: 70px;
+      width: 278px;
+      border: 1px solid lightgray;
+      position: fixed;
+      bottom: 0; }
+      body .chat-box .footer .text-area {
+        height: 28px;
+        width: 274px;
+        border: 1px solid white; }
+        body .chat-box .footer .text-area textarea {
+          height: 30px;
+          width: 266px;
+          border: 1px solid black;
+          overflow: hidden;
+          margin-left: 3px; }
+      body .chat-box .footer .attachment {
+        height: 30px;
+        width: 266px;
+        border: 1px solid white;
+        position: fixed;
+        justify-content: space-between;
+        bottom: 0;
+        display: flex;
+        margin-left: 5px; }
+        body .chat-box .footer .attachment .footer-image-1 img {
+          height: 85%;
+          width: 90%; }
+        body .chat-box .footer .attachment .footer-image-2 img {
+          height: 80%;
+          width: 70%; }
+        body .chat-box .footer .attachment .footer-image-3 img {
+          height: 80%;
+          width: 90%; }
+        body .chat-box .footer .attachment .footer-image-4 img {
+          height: 80%;
+          width: 80%; }
+        body .chat-box .footer .attachment .footer-image-5 img {
+          height: 80%;
+          width: 70%; }
+        body .chat-box .footer .attachment .footer-image-6 img {
+          height: 100%;
+          width: 90%; }
+        body .chat-box .footer .attachment .footer-image-7 img {
+          height: 90%;
+          width: 80%; }
+        body .chat-box .footer .attachment .footer-image-8 img {
+          height: 85%;
+          width: 90%;
+          padding-top: 2px; }
+        body .chat-box .footer .attachment .footer-image-9 img {
+          height: 90%;
+          width: 80%; }
+
+@keyframes myanimation {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: yellow; }
+  50% {
+    background-color: green; }
+  75% {
+    background-color: brown; }
+  100% {
+    background-color: red; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,56 @@
+
+$border-size:1px;
+
+
+
+// ********** placeholder selectors *************
+
+%footer-image{
+    @include height-width(25px,25px);
+    @include border-style(1px,white); 
+    img:hover{
+        cursor: pointer;
+    }                  
+}
+
+%chat-size-small{
+    @include height-width(30px,75px);
+    @include border-style(1px,black); 
+    @include border-radius-for-small-chat;
+    padding: 5px;
+    background: #f1f0f0;
+
+    p{
+        display: inline;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+}
+
+%chat-size-big{
+    @include height-width(45px,190px);
+    @include border-style(1px,black); 
+    @include border-radius-for-big-chat;
+    margin-top: 4px;
+    padding: 5px;
+    background: #f1f0f0;
+    p{
+        display: inline;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+}
+
+%chat-size-big-1{
+    @include height-width(45px,150px);
+    @include border-style(1px,black); 
+    @include border-radius-for-big-chat;
+    margin-top: 4px;
+    padding: 5px;
+    background: #f1f0f0;
+    p{
+        display: inline;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+}
