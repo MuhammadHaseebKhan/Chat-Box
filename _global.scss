@@ -15,6 +15,10 @@ body{
        right: 0;
        bottom: 0;
        margin-right: 240px;
+
+        // ************* Header ***************
+        // =====================================
+
        .header{
             display: flex;
             justify-content: space-between;
@@ -45,6 +49,9 @@ body{
                     // margin-top: 2px;
                     font-size: 16px;
                     color: white;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }                  
             }
             .right-header{
@@ -52,6 +59,16 @@ body{
                 @include border-style($border-size,rgb(42, 116, 177)); 
                 display: flex;
                 justify-content: space-between;
+                .add-friend{
+                    &:hover{
+                        // background: red;
+                        & +.plus-hover{
+                            background: red;
+                            display: block;
+                        }
+                    }
+                }
+                
                 .right-sub-header{
                     @include height-width(100%,18%);
                     @include border-style($border-size,rgb(42, 116, 177));
@@ -59,45 +76,79 @@ body{
                     img{
                         @include height-width(70%,80%);
                         &:hover{
-                            cursor: pointer;
+                            cursor: pointer;                           
                         }
                     }
                 }
             }
        }
+
+    //    ************ Body ****************
+    //   =====================================
+
        .body{
             @include height-width(248px,278px);
-            @include border-style(1px,red); 
+            @include border-style(1px,white); 
             display: flex;
-            .side-bar{
-                @include height-width(245px,50px);
-                @include border-style(1px,black); 
-            }
+            // .side-bar{
+            //     @include height-width(245px,50px);
+            //     @include border-style(1px,black); 
+            // }
             .chat{
-                @include height-width(245px,222px);
-                @include border-style(1px,black); 
+                @include height-width(245px,276px);
+                @include border-style(1px,white); 
                 padding: 5px;
                 overflow-x: hidden;
                 overflow-y: scroll;
+
+                .plus-hover{
+                    display: none;
+                    @include height-width(30px,240px);
+                    @include border-style(1px,black);
+                    padding-top: 4px;
+                    padding-left: 8px;
+                    input{
+                        text-indent: 5px;
+                    }
+                }
                 .small-chat{
                     @extend %chat-size-small;
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .wrapper{
+                    @include height-width(55px,265px);
+                    @include border-style(1px,white); 
+                    display: flex;
+                    .profile-pic{
+                        @include height-width(65%,15%);
+                        @include border-style(1px,white); 
+                        margin-top: 8px;
+                    }
                 }
                 .big-chat{
                     @extend %chat-size-big;   
                 }
                 .small-chat-1{
                     @extend %chat-size-small;
-                    background: red;
-                    margin-left: 120px;
+                    border-bottom-left-radius: 20px;
+                    background: #4080ff;
+                    margin-left: 170px;
                     margin-top: 5px;
+                    color: white;
                 }
                 .big-chat-1{
                     @extend %chat-size-big-1;
-                    background: yellow;
-                    margin-left: 42px;
+                    background: #4080ff;
+                    margin-left: 95px;
+                    color: white;
                 }
             }
        }
+
+    //    ********* Footer *************
+    //   ================================
+
        .footer{
             @include height-width(70px,278px);
             @include border-style(1px,lightgray);
@@ -108,8 +159,9 @@ body{
                 @include border-style(1px,white);
                 textarea{
                     @include height-width(30px,266px);
-                    @include border-style(1px,black);
-                    overflow: hidden;
+                    @include border-style(1px,white);
+                    overflow-x: hidden;
+                    overflow-y: scroll;
                     margin-left: 3px;
                 }
             }
@@ -127,42 +179,63 @@ body{
                     @extend %footer-image;
                     img{
                         @include height-width(85%,90%);
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 .footer-image-2{
                     @extend %footer-image;
                     img{
                         @include height-width(80%,70%);
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 .footer-image-3{
                     @extend %footer-image;
                     img{
                         @include height-width(80%,90%);
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 .footer-image-4{
                     @extend %footer-image;
                     img{
                         @include height-width(80%,80%);
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 .footer-image-5{
                     @extend %footer-image;
                     img{
                         @include height-width(80%,70%);
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 .footer-image-6{
                     @extend %footer-image;
                     img{
                         @include height-width(100%,90%);
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 .footer-image-7{
                     @extend %footer-image;
                     img{
                         @include height-width(90%,80%);
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 .footer-image-8{
@@ -170,18 +243,27 @@ body{
                     img{
                         @include height-width(85%,90%);
                         padding-top: 2px;
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 .footer-image-9{
                     @extend %footer-image;
                     img{
                         @include height-width(90%,80%);
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
             }
        }
     }
 }
+
+    // ****** Key Frames *******
+    // ==========================
 
 @keyframes myanimation {
     0% {background-color: red;}

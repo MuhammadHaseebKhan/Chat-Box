@@ -8,7 +8,7 @@ body .chat-box .footer .attachment .footer-image-1, body .chat-box .footer .atta
 body .chat-box .body .chat .small-chat, body .chat-box .body .chat .small-chat-1 {
   height: 30px;
   width: 75px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -22,7 +22,7 @@ body .chat-box .body .chat .small-chat, body .chat-box .body .chat .small-chat-1
 body .chat-box .body .chat .big-chat {
   height: 45px;
   width: 190px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-top-left-radius: 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -38,7 +38,7 @@ body .chat-box .body .chat .big-chat {
 body .chat-box .body .chat .big-chat-1 {
   height: 45px;
   width: 150px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-top-left-radius: 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -99,12 +99,17 @@ body {
           padding-top: 3px;
           font-size: 16px;
           color: white; }
+          body .chat-box .header .left-header .left-sub-header-2:hover {
+            cursor: pointer; }
       body .chat-box .header .right-header {
         height: 100%;
         width: 50%;
         border: 1px solid #2a74b1;
         display: flex;
         justify-content: space-between; }
+        body .chat-box .header .right-header .add-friend:hover + .plus-hover {
+          background: red;
+          display: block; }
         body .chat-box .header .right-header .right-sub-header {
           height: 100%;
           width: 18%;
@@ -118,26 +123,47 @@ body {
     body .chat-box .body {
       height: 248px;
       width: 278px;
-      border: 1px solid red;
+      border: 1px solid white;
       display: flex; }
-      body .chat-box .body .side-bar {
-        height: 245px;
-        width: 50px;
-        border: 1px solid black; }
       body .chat-box .body .chat {
         height: 245px;
-        width: 222px;
-        border: 1px solid black;
+        width: 276px;
+        border: 1px solid white;
         padding: 5px;
         overflow-x: hidden;
         overflow-y: scroll; }
+        body .chat-box .body .chat .plus-hover {
+          display: none;
+          height: 30px;
+          width: 240px;
+          border: 1px solid black;
+          padding-top: 4px;
+          padding-left: 8px; }
+          body .chat-box .body .chat .plus-hover input {
+            text-indent: 5px; }
+        body .chat-box .body .chat .small-chat {
+          margin-top: 10px;
+          margin-left: 40px; }
+        body .chat-box .body .chat .wrapper {
+          height: 55px;
+          width: 265px;
+          border: 1px solid white;
+          display: flex; }
+          body .chat-box .body .chat .wrapper .profile-pic {
+            height: 65%;
+            width: 15%;
+            border: 1px solid white;
+            margin-top: 8px; }
         body .chat-box .body .chat .small-chat-1 {
-          background: red;
-          margin-left: 120px;
-          margin-top: 5px; }
+          border-bottom-left-radius: 20px;
+          background: #4080ff;
+          margin-left: 170px;
+          margin-top: 5px;
+          color: white; }
         body .chat-box .body .chat .big-chat-1 {
-          background: yellow;
-          margin-left: 42px; }
+          background: #4080ff;
+          margin-left: 95px;
+          color: white; }
     body .chat-box .footer {
       height: 70px;
       width: 278px;
@@ -151,8 +177,9 @@ body {
         body .chat-box .footer .text-area textarea {
           height: 30px;
           width: 266px;
-          border: 1px solid black;
-          overflow: hidden;
+          border: 1px solid white;
+          overflow-x: hidden;
+          overflow-y: scroll;
           margin-left: 3px; }
       body .chat-box .footer .attachment {
         height: 30px;
@@ -166,31 +193,49 @@ body {
         body .chat-box .footer .attachment .footer-image-1 img {
           height: 85%;
           width: 90%; }
+          body .chat-box .footer .attachment .footer-image-1 img:hover {
+            opacity: 0.5; }
         body .chat-box .footer .attachment .footer-image-2 img {
           height: 80%;
           width: 70%; }
+          body .chat-box .footer .attachment .footer-image-2 img:hover {
+            opacity: 0.5; }
         body .chat-box .footer .attachment .footer-image-3 img {
           height: 80%;
           width: 90%; }
+          body .chat-box .footer .attachment .footer-image-3 img:hover {
+            opacity: 0.5; }
         body .chat-box .footer .attachment .footer-image-4 img {
           height: 80%;
           width: 80%; }
+          body .chat-box .footer .attachment .footer-image-4 img:hover {
+            opacity: 0.5; }
         body .chat-box .footer .attachment .footer-image-5 img {
           height: 80%;
           width: 70%; }
+          body .chat-box .footer .attachment .footer-image-5 img:hover {
+            opacity: 0.5; }
         body .chat-box .footer .attachment .footer-image-6 img {
           height: 100%;
           width: 90%; }
+          body .chat-box .footer .attachment .footer-image-6 img:hover {
+            opacity: 0.5; }
         body .chat-box .footer .attachment .footer-image-7 img {
           height: 90%;
           width: 80%; }
+          body .chat-box .footer .attachment .footer-image-7 img:hover {
+            opacity: 0.5; }
         body .chat-box .footer .attachment .footer-image-8 img {
           height: 85%;
           width: 90%;
           padding-top: 2px; }
+          body .chat-box .footer .attachment .footer-image-8 img:hover {
+            opacity: 0.5; }
         body .chat-box .footer .attachment .footer-image-9 img {
           height: 90%;
           width: 80%; }
+          body .chat-box .footer .attachment .footer-image-9 img:hover {
+            opacity: 0.5; }
 
 @keyframes myanimation {
   0% {

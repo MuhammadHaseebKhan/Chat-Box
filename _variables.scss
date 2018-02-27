@@ -15,7 +15,7 @@ $border-size:1px;
 
 %chat-size-small{
     @include height-width(30px,75px);
-    @include border-style(1px,black); 
+    @include border-style(1px,white); 
     @include border-radius-for-small-chat;
     padding: 5px;
     background: #f1f0f0;
@@ -29,7 +29,7 @@ $border-size:1px;
 
 %chat-size-big{
     @include height-width(45px,190px);
-    @include border-style(1px,black); 
+    @include border-style(1px,white); 
     @include border-radius-for-big-chat;
     margin-top: 4px;
     padding: 5px;
@@ -43,7 +43,7 @@ $border-size:1px;
 
 %chat-size-big-1{
     @include height-width(45px,150px);
-    @include border-style(1px,black); 
+    @include border-style(1px,white); 
     @include border-radius-for-big-chat;
     margin-top: 4px;
     padding: 5px;
